@@ -22,8 +22,6 @@ func SetTitle()
         call append(line(".")+6, "\#  Created Time : ".strftime("%c")) 
         call append(line(".")+7, "\# =============================================================") 
         call append(line(".")+8, "") 
-        call append(line(".")+9, "from __future__ import (division,absolute_import,print_function,unicode_literals)")
-        call append(line(".")+10, "")
     else 
         call setline(1, "/* ==============================================================") 
         call append(line("."), "    > File Name: ".expand("%")) 
@@ -32,6 +30,11 @@ func SetTitle()
         call append(line(".")+3, "  > Created Time: ".strftime("%c")) 
         call append(line(".")+4, " ============================================================= */") 
         call append(line(".")+5, "")
+    endif
+
+    if &filetype == 'python' 
+        call append(line(".")+9, "from __future__ import (division,absolute_import,print_function,unicode_literals)")
+        call append(line(".")+10, "")
     endif
 
     if expand("%:e") == 'cpp'
