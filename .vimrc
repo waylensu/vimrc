@@ -37,8 +37,9 @@ nmap <F8> :TagbarToggle<CR>
 set nu
 
 set foldenable 
-source ~/.vim/rc/autostart.vimrc
+source ~/.vim/script/autostart.vimrc
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 set background=dark
 colorscheme solarized
+"comments 89508d

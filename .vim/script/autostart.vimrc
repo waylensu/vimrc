@@ -6,7 +6,7 @@ func SetTitle()
         call setline(3,"")
     elseif &filetype == 'python'
         call setline(1,"#!/usr/bin/env python")
-        call setline(2,"# coding=utf-8")
+        call setline(2,"# -*- coding: utf-8 -*-")
         call setline(3,"")
     elseif &filetype == 'ruby'
         call setline(1,"#!/usr/bin/env ruby")
