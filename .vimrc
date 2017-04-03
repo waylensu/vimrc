@@ -1,7 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-colorscheme basic-dark
+"colorscheme basic-dark
+syntax enable
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -11,10 +12,10 @@ Plugin 'Valloric/ListToggle'
 Plugin 'majutsushi/tagbar'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Yggdroot/indentLine'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-syntax on
 set background=light
 set expandtab 
 set tabstop=4 
@@ -38,3 +39,6 @@ set nu
 set foldenable 
 source ~/.vim/rc/autostart.vimrc
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
+set background=dark
+colorscheme solarized
