@@ -37,5 +37,5 @@ colorscheme solarized
 set hidden
 nnoremap <silent> <C-Left> :bn<CR>
 nnoremap <silent> <C-Right> :bp<CR>
-nnoremap <silent> <C-Up> :bd<CR>
-nnoremap <silent> <C-Down> :n .<CR>
+nnoremap <silent> <C-Up> :n .<CR>
+nnoremap <silent> <C-Down> :bd<CR>
