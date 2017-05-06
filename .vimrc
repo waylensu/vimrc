@@ -23,8 +23,12 @@ set softtabstop=4
 "
 let g:indentLine_enabled = 1
 
-nmap <F3> :NERDTreeToggle<cr>
-nmap <F4> :TagbarToggle<CR>
+nmap <F1> :bn<CR>
+nmap <F2> :bp<CR>
+nmap <F3> :YcmCompleter GoToDefinition<cr>
+nmap <F4> :YcmCompleter GoToDeclaration<cr>
+nmap <F5> :NERDTreeToggle<cr>
+nmap <F6> :TagbarToggle<CR>
 set nu
 
 set foldenable 
@@ -35,7 +39,5 @@ set background=dark
 colorscheme solarized
 "comments 89508d
 set hidden
-nnoremap <silent> <C-Left> :bn<CR>
-nnoremap <silent> <C-Right> :bp<CR>
-nnoremap <silent> <C-Up> :n .<CR>
-nnoremap <silent> <C-Down> :bd<CR>
+
+set ls=2
