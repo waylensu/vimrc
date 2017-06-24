@@ -23,8 +23,8 @@ set softtabstop=4
 "
 let g:indentLine_enabled = 1
 
-nmap <F1> :bn<CR>
-nmap <F2> :bp<CR>
+nmap <F1> :bp<CR>
+nmap <F2> :bn<CR>
 nmap <F3> :YcmCompleter GoToDefinition<cr>
 nmap <F4> :YcmCompleter GoToDeclaration<cr>
 nmap <F5> :NERDTreeToggle<cr>
@@ -38,6 +38,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 set background=dark
 colorscheme solarized
 "comments 89508d
+"background rgb 0 43 54
 set hidden
 
 set ls=2
